@@ -19,13 +19,13 @@ const QuizzMain = () => {
             .catch((error) => console.error("Error fetching data:", error));
     }, []);
 
-    // ✅ Update body class when `checked` changes
+
     useEffect(() => {
         document.body.classList.toggle('light-mode', checked);
         document.body.classList.toggle('dark-mode', !checked);
     }, [checked]);
 
-    // Images for toggle states
+
     const images = [
         './images/icon-moon-dark.svg',
         './images/icon-moon-light.svg',
